@@ -32,18 +32,31 @@
                 <a class="item" data-tab="tab4">EDUCATION</a>
             </div>
             <div class="ui bottom attached tab segment active" data-tab="tab1">
-                <ul>
-                    <li ng-repeat="val in cv.summary">{{val}}</li>
-                </ul>
+                <div class="ui raised segment">
+                    <ul>
+                        <li ng-repeat="val in cv.summary">{{val}}</li>
+                    </ul>
+                </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab2">
-            <!-- Tab Content !-->
+                <table class="ui blue celled striped table raised segment">
+                    <tbody ng-repeat="skill in cv.techskills">
+                        <tr>
+                            <td><strong>{{skill.title}}</strong></td>
+                            <td>{{skill.text}}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab3">
-            <!-- Tab Content !-->
+                <div class="ui raised segment">
+                    <p>Employmnet history coming here...</p>
+                </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab4">
-            <!-- Tab Content !-->
+                <div class="ui raised segment">
+                    <p>Education coming here...</p>
+                </div>
             </div>
         </div>
     </body>

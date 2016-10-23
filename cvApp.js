@@ -22,6 +22,31 @@ cvApp.controller("cvController", function cvController($scope) {
             { title: "Web development", text: "ASP.NET, ASP.NET.MVC, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
             { title: "Source control", text: "TFS, Git, Git Extensions, GitHub." },
             { title: "Exposure to", text: "AWS, MongoDB, NserviceBus, NodeJS." }
+        ],
+        employment: [
+            { 
+                company: "Jonas Software", address: "Markham, ON, Canada", 
+                description: "Jonas Software is a leading provider of enterprise software for the Club Management and Construction and Service industries", 
+                url: "http://www.jonasconstruction.com", 
+                positions:
+                [
+                    { title: "Software Developer", period: "2008 - 2016", text: "" }
+                ] 
+            },
+            {
+                company: "BSM Wireless", address: "Woodbridge, ON, Canada", 
+                description: "BSM Wireless Inc. designs, manufactures and markets a comprehensive line of Automatic Vehicle Security and Location solutions", 
+                url: "http://www.bsmwireless.com", 
+                positions: 
+                [
+                    { title: "Software Developer", period: "2006 - 2008", text: "" }
+                ]
+            }
+        ],
+        education: [
+            { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ, Markham office, online" },
+            { title: "Software Development Course", period: "1997", description: "Tel-Aviv University, Israel" },
+            { title: "M. Eng. in Electrical Engineering", period: "1987", description: "Perm State Technical University, Perm, Russia" }
         ]
     };
 });

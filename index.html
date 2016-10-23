@@ -18,6 +18,36 @@
                     <div class="description">Cell: {{cv.phone}}</div>
                 </div>
             </div>
+            <h3 class="ui header" style="text-align: center">
+                <div class="content">
+                    <span >OBJECTIVE</span>
+                    <p class="sub header" style="font-style: italic">{{cv.objective}}</p>
+                </div>
+            </h3>
+
+            <div class="ui top attached tabular menu">
+                <a class="item active" data-tab="tab1">SUMMARY</a>
+                <a class="item" data-tab="tab2">TECHNICAL SKILLS</a>
+                <a class="item" data-tab="tab3">EMPLOYMENT HISTORY</a>
+                <a class="item" data-tab="tab4">EDUCATION</a>
+            </div>
+            <div class="ui bottom attached tab segment active" data-tab="tab1">
+                <ul>
+                    <li ng-repeat="val in cv.summary">{{val}}</li>
+                </ul>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="tab2">
+            <!-- Tab Content !-->
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="tab3">
+            <!-- Tab Content !-->
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="tab4">
+            <!-- Tab Content !-->
+            </div>
         </div>
     </body>
+    <script>
+        $('.tabular.menu .item').tab();
+    </script>
 </html>

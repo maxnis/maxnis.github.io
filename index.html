@@ -1,12 +1,15 @@
 <!doctype html />
-<html lang="en">
+<html lang="en" ng-app>
     <head>
         <title>My Resume</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css" integrity="sha256-dLLWqhkei0Q33qUBAAdfW5OATwc2YiTMdABlOwasWg0=" crossorigin="anonymous" />
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
+        <script src="cvCtrlr.js"></script>
     </head>
     <body>
-        <p>testing</p>
+        <div ng-controller="cvCont">
+            <h2>{{cv.name}}</h2>
+        </div>
     </body>
 </html>

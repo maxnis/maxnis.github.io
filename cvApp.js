@@ -16,12 +16,12 @@ cvApp.controller("cvController", function cvController($scope) {
             "Passionate about producing a reliable and maintainable codebase in order to reduce errors and increase readability."
         ],
         techskills: [
-            { title: "Languages", text: "C#, Visual Basic, T-SQL, LINQ, JavaScript." },
-            { title: "Tools", text: "MS Visual Studio 2008 - 2013, VS-Code, .NET frameworks 4.5-2.0, Nancy Fx, EF." },
-            { title: "Databases", text: "MS SQL Server 2005 - 2014, SQLite." },
-            { title: "Web development", text: "ASP.NET, ASP.NET.MVC, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
-            { title: "Source control", text: "TFS, Git, Git Extensions, GitHub." },
-            { title: "Exposure to", text: "AWS, MongoDB, NserviceBus, NodeJS." }
+            { title: "Languages", icon: "code", text: "C#, Visual Basic, T-SQL, LINQ, JavaScript." },
+            { title: "Tools", icon: "setting", text: "MS Visual Studio 2008 - 2013, VS-Code, .NET frameworks 4.5-2.0, Nancy Fx, EF." },
+            { title: "Databases", icon: "database", text: "MS SQL Server 2005 - 2014, SQLite." },
+            { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
+            { title: "Source control", icon: "fork", text: "TFS, Git, Git Extensions, GitHub." },
+            { title: "Exposure to", icon: "lab", text: "AWS, MongoDB, NserviceBus, NodeJS." }
         ],
         employment: [
             { 
@@ -30,7 +30,16 @@ cvApp.controller("cvController", function cvController($scope) {
                 url: "http://www.jonasconstruction.com", 
                 positions:
                 [
-                    { title: "Software Developer", period: "2008 - 2016", text: "" }
+                    { 
+                        title: "Senior Software Developer", period: "2008 - 08/2016", 
+                        dolist: [
+                        "Led hybrid mobile HTML5 project using AngularJS and Kendo UI, including mentoring newly hired developers, doing code reviews to improve code quality.", 
+                        "Led successfully migration of web-hosted solutions to a new environment, ensuring that no data loss occurred in the process. Project involved both system and SQL Server upgrade and required transferring hundreds of web sites and databases. Developed automation tools to simplify the process of new releases and updates. Developed, automated and documented procedure of creating infrastructure for new customers including web sites and databases.",
+                        "Led development of multi-tier software containing cross-platform HTML5 mobile-friendly web application which utilized websqldb and application cache allowing application to stay functional offline.",
+                        "Designed multi-tenant architecture for data-driven web solutions across the company which reduced maintenance cost to a minimum.",
+                        "Initiated and completed an internal web based admin dashboard tool used by professional services and technical support. Tool provides features to register and configure customers in the system, test their working modules remotely replacing previous manual procedures - as a result reducing support time and enhancing problem identification.",
+                        "Developed business-driven enhancements and defect fixes for an existing range of production systems. Collaborated with teams to improve the performance of systems including websites, web services, windows services, and desktop applications for a leading provider of enterprise management software and related services. Provided technical expertise to create enhancements, code corrections, and develop new functionality on the company's in-house systems. Worked with other developers, analysts and management to complete projects as needed."
+                    ]}
                 ] 
             },
             {
@@ -39,7 +48,13 @@ cvApp.controller("cvController", function cvController($scope) {
                 url: "http://www.bsmwireless.com", 
                 positions: 
                 [
-                    { title: "Software Developer", period: "2006 - 2008", text: "" }
+                    { 
+                        title: "Software Developer", period: "2006 - 2008", 
+                        dolist: [
+                        "Maintained in-house device diagnostics and provisioning software tools.", 
+                        "Developed modules and features for the customer's web portal solution.",
+                        "Accomplished various SQL Server development projects as well as development and maintenance of different modules for real-time fleet management web portal."
+                    ]}
                 ]
             }
         ],

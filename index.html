@@ -26,10 +26,19 @@
             </h3>
 
             <div class="ui top attached tabular menu">
-                <a class="item active" data-tab="tab1">SUMMARY</a>
-                <a class="item" data-tab="tab2">TECHNICAL SKILLS</a>
-                <a class="item" data-tab="tab3">EMPLOYMENT HISTORY</a>
-                <a class="item" data-tab="tab4">EDUCATION</a>
+                <a class="item active" data-tab="tab1">
+                    <i class="list layout icon"></i>
+                    SUMMARY</a>
+                <a class="item" data-tab="tab2">
+                    <i class="tags icon"></i>
+                    TECHNICAL SKILLS</a>
+                <a class="item" data-tab="tab3">
+                    <i class="industry icon"></i>
+                    EMPLOYMENT</a>
+                <a class="item" data-tab="tab4">
+                    <i class="student icon"></i>
+                    EDUCATION
+                </a>
             </div>
             <div class="ui bottom attached tab segment active" data-tab="tab1">
                 <div class="ui raised segment">
@@ -40,23 +49,51 @@
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab2">
                 <table class="ui blue celled striped table raised segment">
-                    <tbody ng-repeat="skill in cv.techskills">
+                    <tbody ng-repeat="item in cv.techskills">
                         <tr>
-                            <td><strong>{{skill.title}}</strong></td>
-                            <td>{{skill.text}}</td>
+                            <td>
+                                <i class="{{item.icon}} icon"></i>
+                                <strong>{{item.title}}</strong>
+                            </td>
+                            <td>{{item.text}}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab3">
-                <div class="ui raised segment">
-                    <p>Employmnet history coming here...</p>
-                </div>
+                <table class="ui blue celled striped table raised segment" ng-repeat="item in cv.employment">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>{{item.company}}</strong> - {{item.address}} - <a ng-href="{{item.url}}" target="_blank">{{item.url}}</a>
+                                <div class="text" style="font-style: italic; margin-bottom: 10px">({{item.description}})</div>
+                                <div class="ui item" ng-repeat="pos in item.positions">
+                                    <strong>{{pos.title}}</strong> ({{pos.period}})
+                                    <ul>
+                                        <li ng-repeat="job in pos.dolist">
+                                            {{job}}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab4">
-                <div class="ui raised segment">
-                    <p>Education coming here...</p>
-                </div>
+                <table class="ui blue celled striped table raised segment" ng-repeat="item in cv.education">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>{{item.title}}</h4>
+                                <div class="text">{{item.description}}</div>
+                            </td>
+                            <td class="right aligned collapsing">
+                                {{item.period}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </body>

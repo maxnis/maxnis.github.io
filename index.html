@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css" integrity="sha256-dLLWqhkei0Q33qUBAAdfW5OATwc2YiTMdABlOwasWg0=" crossorigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body ng-controller="cvController">
-        <div class="ui container" style="padding: 40px">
+    <body ng-controller="cvController" style="background-color: gray">
+
+        <div class="ui container" style="padding: 40px; margin: 20px; background-color: white; border-style: outset">
             <div class="ui message raised segment">
                 <div class="content">
                     <div class="header">{{cv.name}}</div>
@@ -103,7 +104,7 @@
             </div>
         </div>
   
-        </body>
+    </body>
     <script>
         $('.tabular.menu .item').tab();
     </script>

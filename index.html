@@ -11,7 +11,7 @@
     </head>
     <body ng-controller="cvController">
         <div class="ui container" style="padding: 40px">
-            <div class="ui card">
+            <div class="ui message raised segment">
                 <div class="content">
                     <div class="header">{{cv.name}}</div>
                     <div class="description">{{cv.city}}, {{cv.province}}</div>
@@ -21,14 +21,13 @@
                     </div>
                     <div class="description">
                         <i class="mail icon"></i>
-                        {{cv.email}}
+                        <a href="mailto:{{cv.email}}?subject=Hello&body=Hello {{cv.name}}!">{{cv.email}}</a>
                     </div>
                 </div>
             </div>
             <h3 class="ui header" style="text-align: center">
                 <div class="content">
-                    <span >OBJECTIVE</span>
-                    <p class="sub header" style="font-style: italic">{{cv.objective}}</p>
+                    <p class="header" style="font-style: italic">{{cv.objective}}</p>
                 </div>
             </h3>
 
@@ -103,7 +102,8 @@
                 </table>
             </div>
         </div>
-    </body>
+  
+        </body>
     <script>
         $('.tabular.menu .item').tab();
     </script>

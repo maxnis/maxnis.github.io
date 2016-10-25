@@ -33,32 +33,32 @@
             </h3>
 
             <div class="ui top attached tabular menu">
-                <a class="item active" data-tab="tab1">
+                <a class="item active" data-tab="tab_sum">
                     <i class="list layout icon"></i>
-                    SUMMARY</a>
-                <a class="item" data-tab="tab2">
+                    Summary</a>
+                <a class="item" data-tab="tab_skl">
                     <i class="tags icon"></i>
-                    TECHNICAL SKILLS</a>
-                <a class="item" data-tab="tab3">
+                    Technical Skills</a>
+                <a class="item" data-tab="tab_empl">
                     <i class="industry icon"></i>
-                    EMPLOYMENT</a>
-                <a class="item" data-tab="tab4">
+                    Employment</a>
+                <a class="item" data-tab="tab_edu">
                     <i class="student icon"></i>
-                    EDUCATION
+                    Education
                 </a>
             </div>
-            <div class="ui bottom attached tab segment active" data-tab="tab1">
+            <div class="ui bottom attached tab segment active" data-tab="tab_sum">
                 <div class="ui raised segment">
                     <ul>
                         <li ng-repeat="val in cv.summary">{{val}}</li>
                     </ul>
                 </div>
             </div>
-            <div class="ui bottom attached tab segment" data-tab="tab2">
+            <div class="ui bottom attached tab segment" data-tab="tab_skl">
                 <table class="ui blue celled striped table raised segment">
                     <tbody ng-repeat="item in cv.techskills">
                         <tr>
-                            <td>
+                            <td class="collapsing">
                                 <i class="{{item.icon}} icon"></i>
                                 <strong>{{item.title}}</strong>
                             </td>
@@ -67,27 +67,29 @@
                     </tbody>
                 </table>
             </div>
-            <div class="ui bottom attached tab segment" data-tab="tab3">
-                <table class="ui blue celled striped table raised segment" ng-repeat="item in cv.employment">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <strong>{{item.company}}</strong> - {{item.address}} - <a ng-href="{{item.url}}" target="_blank">{{item.url}}</a>
-                                <div class="text" style="font-style: italic; margin-bottom: 10px">({{item.description}})</div>
-                                <div class="ui item" ng-repeat="pos in item.positions">
-                                    <strong>{{pos.title}}</strong> ({{pos.period}})
-                                    <ul>
-                                        <li ng-repeat="job in pos.dolist">
-                                            {{job}}
-                                        </li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="ui bottom attached tab segment" data-tab="tab_empl">
+                <div class="ui blue raised segment" ng-repeat="item in cv.employment | filter:show != false">
+                    <div class="ui blue ribbon label">
+                        <h4>{{item.company}}</h4>
+                    </div>
+                    <div class="content">
+                        <div>
+                            {{item.address}} - <a ng-href="{{item.url}}" target="_blank">{{item.url}}</a>
+                        </div>
+                        <div class="text" style="font-style: italic; margin-bottom: 10px">({{item.description}})
+                        </div>
+                        <div class="ui item" ng-repeat="pos in item.positions">
+                            <strong>{{pos.title}}</strong> ({{pos.period}})
+                            <ul>
+                                <li ng-repeat="job in pos.dolist">
+                                    {{job}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ui bottom attached tab segment" data-tab="tab4">
+            <div class="ui bottom attached tab segment" data-tab="tab_edu">
                 <table class="ui blue celled striped table raised segment" ng-repeat="item in cv.education">
                     <tbody>
                         <tr>
@@ -102,10 +104,12 @@
                     </tbody>
                 </table>
             </div>
+            
         </div>
   
     </body>
     <script>
         $('.tabular.menu .item').tab();
+        $('.accordion').accordion();
     </script>
 </html>

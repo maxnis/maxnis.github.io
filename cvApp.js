@@ -1,6 +1,6 @@
 var cvApp = angular.module("cvApp", []);
 
-cvApp.controller("cvController", function cvController($scope) {
+cvApp.controller("cvController", function ($scope) {
     $scope.cv = {
         name: "Maxim Nisenbaum",
         address: "122 Lowther Ave.",
@@ -21,11 +21,11 @@ cvApp.controller("cvController", function cvController($scope) {
             { title: "Databases", icon: "database", text: "MS SQL Server 2005 - 2014, SQLite." },
             { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
             { title: "Source control", icon: "fork", text: "TFS, Git, Git Extensions, GitHub." },
-            { title: "Exposure to", icon: "lab", text: "AWS, MongoDB, NserviceBus, NodeJS." }
+            { title: "Exposure to", icon: "lab", text: "AWS, MongoDB, NserviceBus, NodeJS, Linux." }
         ],
         employment: [
             { 
-                company: "Jonas Software", address: "Markham, ON, Canada", 
+                company: "Jonas Software", address: "Markham, ON, Canada", show: true,
                 description: "Jonas Software is a leading provider of enterprise software for the Club Management and Construction and Service industries", 
                 url: "http://www.jonasconstruction.com", 
                 positions:
@@ -43,7 +43,7 @@ cvApp.controller("cvController", function cvController($scope) {
                 ] 
             },
             {
-                company: "BSM Wireless", address: "Woodbridge, ON, Canada", 
+                company: "BSM Wireless", address: "Woodbridge, ON, Canada", show: true,
                 description: "BSM Wireless Inc. designs, manufactures and markets a comprehensive line of Automatic Vehicle Security and Location solutions", 
                 url: "http://www.bsmwireless.com", 
                 positions: 
@@ -56,6 +56,20 @@ cvApp.controller("cvController", function cvController($scope) {
                         "Accomplished various SQL Server development projects as well as development and maintenance of different modules for real-time fleet management web portal."
                     ]}
                 ]
+            },
+            {
+                company: "Emka Group Inc.", address: "Asdod Ind. zone, Israel", show: false,
+                description: "Emka Group is a direct mail provider and manufacturer of printing paper, envelopes, magnetic cards, etc.", 
+                url: "http://www.emkagroup.co.il",
+                positions:
+                [
+                    {
+                        title: "Software Engineer", period: "1997 - 2005",
+                        dolist: [
+                            "Data manipulation as well as various kinds of printing aplications"
+                        ]
+                    }
+                ]
             }
         ],
         education: [
@@ -64,4 +78,5 @@ cvApp.controller("cvController", function cvController($scope) {
             { title: "M. Eng. in Electrical Engineering", period: "1987", description: "Perm State Technical University, Perm, Russia" }
         ]
     };
+
 });

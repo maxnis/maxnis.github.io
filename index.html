@@ -2,29 +2,30 @@
 <html lang="en" ng-app="cvApp">
     <head>
         <title>My Resume</title>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
         <script src="cvApp.js" type="text/javascript" ></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css" integrity="sha256-dLLWqhkei0Q33qUBAAdfW5OATwc2YiTMdABlOwasWg0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css" crossorigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body ng-controller="cvController" style="background-color: gray">
 
         <div class="ui container" style="padding: 40px; margin: 20px; background-color: white; border-style: outset">
             <div class="ui message raised segment">
-                <div class="content">
-                    <div class="header">{{cv.name}}</div>
-                    <div class="description">{{cv.city}}, {{cv.province}}</div>
-                    <div class="description">
-                        <i class="mobile icon"></i>
-                        {{cv.phone}}
+                    <div class="content">
+                        <img class="right floated mini ui image" src="IMG_3150.JPG" />
+                        <div class="header">{{cv.name}}</div>
+                        <div class="description">{{cv.city}}, {{cv.province}}</div>
+                        <div class="description">
+                            <i class="mobile icon"></i>
+                            {{cv.phone}}
+                        </div>
+                        <div class="description">
+                            <i class="mail icon"></i>
+                            <a href="mailto:{{cv.email}}?subject=Hello&body=Hello, {{cv.name}}!">{{cv.email}}</a>
+                        </div>
                     </div>
-                    <div class="description">
-                        <i class="mail icon"></i>
-                        <a href="mailto:{{cv.email}}?subject=Hello&body=Hello {{cv.name}}!">{{cv.email}}</a>
-                    </div>
-                </div>
             </div>
             <h3 class="ui header" style="text-align: center">
                 <div class="content">
@@ -48,7 +49,7 @@
                 </a>
             </div>
             <div class="ui bottom attached tab segment active" data-tab="tab_sum">
-                <div class="ui raised segment">
+                <div class="ui blue raised segment">
                     <ul>
                         <li ng-repeat="val in cv.summary">{{val}}</li>
                     </ul>

@@ -11,10 +11,6 @@ cvApp.controller("cvController", function ($scope) {
         summary: {
             description: "Technically sophisticated and highly accomplished .NET developer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
             short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Windows Server / IIS"
-            //"Broad knowledge of Microsoft .NET: Windows services, Web services, Web applications, Windows Forms applications, WCF, Setup projects.",
-            //"Hands-on knowledge of MS SQL Server 2014/2012/2008 including stored procedures, functions, integrated CLR assemblies and administration.",
-            //"Working knowledge of Windows Server 2012 R2/2008 R2 and IIS 8.5/7.5.",
-            //"Passionate about producing a reliable and maintainable codebase in order to reduce errors and increase readability."
         },
         techskills: [
             { title: "Languages", icon: "code", text: "C#, VB.NET, T-SQL, LINQ, JavaScript." },

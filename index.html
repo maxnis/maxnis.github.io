@@ -14,7 +14,7 @@
         <div class="ui container" style="padding: 40px; margin: 20px; background-color: white; border-style: outset">
             <div class="ui message raised segment">
                     <div class="content">
-                        <img class="right floated mini ui image" src="IMG_3150.JPG" />
+                        <img class="right floated mini ui image" src="IMG_3150.JPG" alt="photo" />
                         <div class="header">{{cv.name}}</div>
                         <div class="description">{{cv.city}}, {{cv.province}}</div>
                         <div class="description">
@@ -29,7 +29,7 @@
             </div>
             <h3 class="ui header" style="text-align: center">
                 <div class="content">
-                    <p class="header" style="font-style: italic">{{cv.objective}}</p>
+                    <p class="header" style="font-style: italic">{{cv.summary.title}}</p>
                 </div>
             </h3>
 
@@ -52,7 +52,8 @@
                 <div class="ui blue raised segment">
                     <div class="content">
                         <p class="text">{{cv.summary.description}}</p>
-                        <p class="text" style="text-align: center; font-style: italic">{{cv.summary.short}}</p>
+                        <p class="text" style="text-align: center; font-style: italic">
+                            {{cv.summary.short}}</p>
                     </div>
                 </div>
             </div>
@@ -93,10 +94,63 @@
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_edu">
                 <table class="ui blue celled striped table raised segment">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="ui blue ribbon label">
+                                    <h4>
+                                        <i class="university icon"></i>
+                                        University
+                                    </h4>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr ng-repeat="item in cv.education">
+                        <tr>
                             <td>
-                                <h4>{{item.title}}</h4>
+                                
+                                <div style="font-weight: bold">{{cv.education.univ.title}}</div>
+                                <div class="text">{{cv.education.univ.description}}</div>
+                            </td>
+                            <td class="right aligned collapsing">
+                                {{cv.education.univ.period}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="ui blue celled striped table raised segment">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="ui blue ribbon label"><h4>Courses</h4></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in cv.education.courses | orderBy:'period':true">
+                            <td>
+                                <div style="font-weight: bold">{{item.title}}</div>
+                                <div class="text">{{item.description}}</div>
+                            </td>
+                            <td class="right aligned collapsing">
+                                {{item.period}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="ui blue celled striped table raised segment">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="ui blue ribbon label"><h4>Certificates</h4></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in cv.education.cert | orderBy:'period':true">
+                            <td>
+                                <div style="font-weight: bold">{{item.title}}</div>
                                 <div class="text">{{item.description}}</div>
                             </td>
                             <td class="right aligned collapsing">

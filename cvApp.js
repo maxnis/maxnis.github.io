@@ -7,18 +7,19 @@ cvApp.controller("cvController", function ($scope) {
         province: "ON",
         phone: "416-856-9515",
         email: "maxnis@gmail.com",
-        objective: "Software engineer with more than 10 years of experience in systems development.",
         summary: {
+            title: "Software engineer with more than 10 years of experience in systems development.",
             description: "Technically sophisticated and highly accomplished .NET developer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
-            short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Windows Server / IIS"
+            short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Windows Server / SQL Server / IIS"
         },
         techskills: [
-            { title: "Languages", icon: "code", text: "C#, VB.NET, T-SQL, LINQ, JavaScript." },
-            { title: "Tools", icon: "setting", text: "MS Visual Studio 2008 - 2013, VS-Code, .NET frameworks 4.5-2.0, Nancy Fx, EF." },
-            { title: "Databases", icon: "database", text: "MS SQL Server 2005 - 2014, SQLite." },
-            { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
+            { title: "Languages", icon: "code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript." },
+            { title: "Tools", icon: "setting", text: "MS Visual Studio 2008 - 2013, VS-Code, .NET 2.0 - 4.5, WCF, Nancy Fx, EF." },
+            { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
+            { title: "RDBMS", icon: "database", text: "MS SQL Server 2005 - 2014, SQLite." },
+            { title: "NoSql", icon: "database", text: "MongoDB."},
             { title: "Source control", icon: "fork", text: "TFS, Git, GitHub." },
-            { title: "Exposure to", icon: "lab", text: "AWS, MongoDB, NserviceBus, NodeJS, PowerShell, Linux." }
+            { title: "Exposure to", icon: "lab", text: "AWS S3, NserviceBus, NodeJS, PowerShell, Linux." }
         ],
         employment: [
             { 
@@ -30,12 +31,12 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Senior Software Developer", period: "2008 - 08/2016", 
                         dolist: [
-                        "Led hybrid mobile HTML5 project using AngularJS and Kendo UI, including mentoring newly hired developers, doing code reviews to improve code quality.", 
-                        "Led successfully migration of web-hosted solutions to a new environment, ensuring that no data loss occurred in the process. Project involved both system and SQL Server upgrade and required transferring hundreds of web sites and databases. Developed automation tools to simplify the process of new releases and updates. Developed, automated and documented procedure of creating hosting infrastructure for new customers.",
-                        "Led development of multi-tier software containing cross-platform HTML5 mobile responsive web application which utilized websqldb and application cache allowing application to stay functional offline.",
+                        "Led hybrid mobile HTML5 project using AngularJS and Kendo UI and NancyFx to implement RESTful api on the back-end.", 
+                        "Managed successful migration of web-hosted solutions to a new environment, ensuring that no data loss occurred in the process. Project involved both system and SQL Server version upgrade and required transferring of hundreds of websites and databases. Created automation tools to simplify the process of new releases and updates. Developed, automated and documented procedure of creating infrastructure for new customers including web sites and databases.",
+                        "Headed development of multi-tier software containing cross-platform HTML5 mobile responsive web application which utilized websqldb and application cache allowing application to stay functional offline.",
                         "Designed multi-tenant architecture for data-driven web solutions across the company which reduced maintenance cost to a minimum.",
-                        "Initiated and completed an internal web based admin dashboard tool used by professional services and technical support. Tool provides features to register and configure customers in the system, test their working modules remotely replacing previous manual procedures - as a result reducing support time and enhancing problem identification.",
-                        "Developed business-driven enhancements and defect fixes for an existing range of production systems. Collaborated with teams to improve the performance of systems including websites, web services, windows services, and desktop applications for a leading provider of enterprise management software and related services. Provided technical expertise to create enhancements, code corrections, and develop new functionality on the company's in-house systems. Worked with other developers, analysts and management to complete projects as needed."
+                        "Initiated and completed an internal web based admin dashboard tool used by professional services and technical support. Tool provides features to register and configure customers in the system, test their working modules remotely replacing previous manual procedures - as a result reducing support time and simplifying problem identification.",
+                        "Collaborated with teams to improve the performance of systems including websites, web services, windows services, and desktop applications."
                     ]}
                 ] 
             },
@@ -71,11 +72,20 @@ cvApp.controller("cvController", function ($scope) {
                 ]
             }
         ],
-        education: [
-            { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ" },
-            { title: "Software Engineering Course", period: "1997", description: "Tel-Aviv University, Israel" },
-            { title: "M. Eng. in Electrical Engineering", period: "1987", description: "Perm State Technical University, Perm, Russia" }
-        ]
+        education: {
+            univ: { title: "M. Eng. in Electrical Engineering", period: "1982 - 1987", description: "Perm State Technical University, Perm, Russia" },
+            courses: [
+                { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ" },
+                { title: "Windows applications design using WPF", period: "2013", description: "Online course"},
+                { title: "Web development course", period: "2001", description: "Ashrot municipal college, Israel"},
+                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto"},
+                { title: "Software Engineering Course", period: "1997", description: "Tel-Aviv University, Israel" }
+                
+            ],
+            cert: [
+                { title: "MCTS", period: "03/2011", description: "Windows Mobile 6.5, Application Development" }
+            ]
+        }
     };
 
 });

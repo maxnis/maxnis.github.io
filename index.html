@@ -92,9 +92,9 @@
                 </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_edu">
-                <table class="ui blue celled striped table raised segment" ng-repeat="item in cv.education">
+                <table class="ui blue celled striped table raised segment">
                     <tbody>
-                        <tr>
+                        <tr ng-repeat="item in cv.education">
                             <td>
                                 <h4>{{item.title}}</h4>
                                 <div class="text">{{item.description}}</div>

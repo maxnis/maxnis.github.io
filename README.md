@@ -1,5 +1,5 @@
 # cv
 
 Html, Angular Js based cv.
-Testing Git/Github on Linux.
+Testing Git on Linux.
 Code editor: VS Code.

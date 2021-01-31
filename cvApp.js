@@ -14,13 +14,15 @@ cvApp.controller("cvController", function ($scope) {
             short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Windows Server / SQL Server / IIS"
         },
         techskills: [
-            { title: "Languages", icon: "code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript." },
-            { title: "Tools", icon: "setting", text: "MS Visual Studio 2008 - 2013, VS-Code, .NET 2.0 - 4.5, WCF, Nancy Fx, EF." },
-            { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, AngularJS, Bootstrap, Telerik Kendo UI." },
-            { title: "RDBMS", icon: "database", text: "MS SQL Server 2005 - 2014, SQLite." },
+            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript." },
+            { title: "Tools", icon: "setting", text: "MS Visual Studio, VS-Code, JetBrains Rider." },
+            { title: "Frameworks", icon: "code", text: ".NET 2.0 - 4.8, WCF, Nancy Fx, EF, NServiceBus"},
+            { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Bootstrap, Telerik Kendo UI." },
+            { title: "RDBMS", icon: "database", text: "MS SQL Server, SQLite." },
             { title: "NoSql", icon: "database", text: "MongoDB."},
             { title: "Source control", icon: "fork", text: "TFS, Git, GitHub." },
-            { title: "Exposure to", icon: "lab", text: "AWS S3, NserviceBus, NodeJS, PowerShell, Linux." }
+            { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions"},
+            { title: "Technology", icon: "cloud upload", text: "AWS, Azure." }
         ],
         employment: [
             { 

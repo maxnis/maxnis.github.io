@@ -56,9 +56,9 @@ cvApp.controller("cvController", function ($scope) {
                 ]
             },
             {
-                company: "Emka Group Inc.", address: "Asdod Ind. zone, Israel", show: true,
+                company: "Emka Group Inc.", address: "Ad Halom Ind. zone, Israel", show: true,
                 description: "Emka Group is a direct mail provider and manufacturer of printing paper, envelopes, magnetic cards, etc.", 
-                url: "http://www.emkagroup.co.il",
+                url: "http://www.emka.co.il/en",
                 positions:
                 [
                     {

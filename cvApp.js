@@ -16,23 +16,31 @@ cvApp.controller("cvController", function ($scope) {
         techskills: [
             { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript." },
             { title: "Tools", icon: "setting", text: "MS Visual Studio, VS-Code, JetBrains Rider." },
-            { title: "Frameworks", icon: "code", text: ".NET 2.0 - 4.8, WCF, Nancy Fx, EF, NServiceBus"},
+            { title: "Frameworks", icon: "code", text: ".NET 2.0 - 4.8, WCF, Nancy Fx, EF, NServiceBus."},
             { title: "Web development", icon: "world", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Bootstrap, Telerik Kendo UI." },
             { title: "RDBMS", icon: "database", text: "MS SQL Server, SQLite." },
             { title: "NoSql", icon: "database", text: "MongoDB."},
             { title: "Source control", icon: "fork", text: "TFS, Git, GitHub." },
-            { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions"},
+            { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions."},
             { title: "Technology", icon: "cloud upload", text: "AWS, Azure." }
         ],
         employment: [
+            {
+                company: "Upstream Works Ltd.", address: "Vaughan, ON", country: "Canada", show: true,
+                description: "Software solutions for contact centers",
+                url: "https://www.upstreamworks.com",
+                positions: [
+                    { title: "Senior Software Developer", period: "2016 - present" }
+                ]
+            },
             { 
-                company: "Jonas Software", address: "Markham, ON, Canada", show: true,
-                description: "Jonas Software is a leading provider of enterprise software for the Club Management and Construction and Service industries", 
+                company: "Jonas Software", address: "Markham, ON", country: "Canada", show: true,
+                description: "Jonas Software is a leading provider of enterprise software for Club Management and Construction and Service industries", 
                 url: "http://www.jonasconstruction.com", 
                 positions:
                 [
                     { 
-                        title: "Senior Software Developer", period: "2008 - 08/2016", 
+                        title: "Senior Software Developer", period: "2008 - 2016", 
                         dolist: [
                         "Led hybrid mobile HTML5 project using AngularJS and Kendo UI and NancyFx to implement RESTful api on the back-end.", 
                         "Managed successful migration of web-hosted solutions to a new environment, ensuring that no data loss occurred in the process. Project involved both system and SQL Server version upgrade and required transferring of hundreds of websites and databases. Created automation tools to simplify the process of new releases and updates. Developed, automated and documented procedure of creating infrastructure for new customers including web sites and databases.",
@@ -44,7 +52,7 @@ cvApp.controller("cvController", function ($scope) {
                 ] 
             },
             {
-                company: "BSM Wireless", address: "Woodbridge, ON, Canada", show: true,
+                company: "BSM Wireless", address: "Woodbridge, ON", country: "Canada", show: true,
                 description: "BSM Wireless Inc. designs, manufactures and markets a comprehensive line of Automatic Vehicle Security and Location solutions", 
                 url: "http://www.bsmwireless.com", 
                 positions: 
@@ -59,7 +67,7 @@ cvApp.controller("cvController", function ($scope) {
                 ]
             },
             {
-                company: "Emka Group Inc.", address: "Ad Halom Ind. zone, Israel", show: true,
+                company: "Emka Group Inc.", address: "Ad Halom Ind. zone", country: "Israel", show: true,
                 description: "Emka Group is a direct mail provider and manufacturer of printing paper, envelopes, magnetic cards, etc.", 
                 url: "http://www.emka.co.il/en",
                 positions:

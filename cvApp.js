@@ -5,7 +5,7 @@ cvApp.controller("cvController", function ($scope) {
         name: "Maxim Nisenbaum",
         city: "Richmond Hill",
         province: "ON",
-        phone: "416-856-9515",
+        phone: "+1-416-856-9515",
         email: "maxnis@gmail.com",
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",

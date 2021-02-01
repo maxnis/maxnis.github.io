@@ -13,19 +13,19 @@
 
         <div class="ui container" style="padding: 40px; margin: 20px; background-color: white; border-style: outset">
             <div class="ui message raised segment">
-                    <div class="content">
-                        <img class="right floated mini ui image" src="IMG_3150.JPG" alt="photo" />
-                        <div class="header">{{cv.name}}</div>
-                        <div class="description">{{cv.city}}, {{cv.province}}, <i class="{{cv.country}} flag"></i></div>
-                        <div class="description">
-                            <i class="mobile alternate icon"></i>
-                            {{cv.phone}}
-                        </div>
-                        <div class="description">
-                            <i class="mail icon"></i>
-                            <a href="mailto:{{cv.email}}?subject=Hello&body=Hello, {{cv.name}}!">{{cv.email}}</a>
-                        </div>
+                <div class="content">
+                    <img class="right floated mini ui image" src="IMG_3150.JPG" alt="photo" />
+                    <div class="header">{{cv.name}}</div>
+                    <div class="description">{{cv.city}}, {{cv.province}}, <i class="{{cv.country}} flag"></i></div>
+                    <div class="description">
+                        <i class="mobile alternate icon"></i>
+                        {{cv.phone}}
                     </div>
+                    <div class="description">
+                        <i class="mail icon"></i>
+                        <a href="mailto:{{cv.email}}?subject=Hello&body=Hello, {{cv.name}}!">{{cv.email}}</a>
+                    </div>
+                </div>
             </div>
             <h3 class="ui header" style="text-align: center">
                 <div class="content">

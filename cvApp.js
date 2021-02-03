@@ -15,13 +15,12 @@ cvApp.controller("cvController", function ($scope) {
         },
         techskills: [
             { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript, Rust." },
-            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, JMeter." },
+            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, JMeter, Postman." },
             { title: "Frameworks", icon: "code", text: ".NET 2.0 - 4.8, WCF, Nancy Fx, EF, NServiceBus."},
-            { title: "Web development", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Jasmine, Bootstrap, Telerik Kendo UI." },
+            { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Bootstrap, Telerik KendoUI." },
             { title: "Source control", icon: "git", text: "TFS, Git, GitHub." },
-            { title: "Unit Tests", icon: "chart bar", text: "MS Test, xUnit, Moq" },
-            { title: "RDBMS", icon: "database", text: "MS SQL Server, SQLite." },
-            { title: "NoSql", icon: "database", text: "MongoDB."},
+            { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine" },
+            { title: "Database", icon: "database", text: "MS SQL Server, SQLite, MongoDB." },
             { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions."},
             { title: "Technology", icon: "cloud upload", text: "AWS, Azure." }
         ],
@@ -92,16 +91,18 @@ cvApp.controller("cvController", function ($scope) {
             }
         ],
         education: {
-            univ: { title: "M. Eng. in Electrical Engineering", period: "1982 - 1987", description: "Perm State Technical University, Perm, Russia" },
+            univ: [
+                { title: "M. Eng. in Electrical Engineering", period: "1982 - 1987", description: "Perm State Technical University, Perm, Russia" },
+                { title: "Software Engineering", period: "1997", description: "Tel-Aviv University, Israel" }
+            ],
             courses: [
+                { title: "MongoDB 101", period: "2018", description: "Mongo DB University"},
                 { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ" },
-                { title: "Windows applications design using WPF", period: "2013", description: "Online course"},
-                { title: "Web development course", period: "2001", description: "Ashrot municipal college, Israel"},
-                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto"},
-                { title: "Software Engineering Course", period: "1997", description: "Tel-Aviv University, Israel" }
-                
+                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto"}               
             ],
             cert: [
+                { title: "MCSD", period: "12/2020", description: "Application Development" },
+                { title: "MCSA", period: "03/2020", description: "Web Development" },
                 { title: "MCTS", period: "03/2011", description: "Windows Mobile 6.5, Application Development" }
             ]
         }

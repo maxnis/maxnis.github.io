@@ -7,6 +7,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
         <script src="cvApp.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="cv.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body ng-controller="cvController" style="background-color: gray">
@@ -15,7 +16,7 @@
             <div class="ui message raised segment">
                 <div class="content">
                     <img class="right floated mini ui image" src="IMG_3150.JPG" alt="photo" />
-                    <div class="header">{{cv.name}}</div>
+                    <h3 class="ui header">{{cv.name}}</h3>
                     <div class="description">{{cv.city}}, {{cv.province}}, <i class="{{cv.country}} flag"></i></div>
                     <div class="description">
                         <i class="mobile alternate icon"></i>
@@ -52,23 +53,23 @@
                 <div class="ui blue raised segment">
                     <div class="content">
                         <p class="text">{{cv.summary.description}}</p>
-                        <p class="text" style="text-align: center; font-style: italic">
+                        <p class="ui message" style="text-align: center; font-style: italic">
                             {{cv.summary.short}}</p>
                     </div>
                 </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_skl">
-                <table class="ui blue celled striped table raised segment">
-                    <tbody ng-repeat="item in cv.techskills">
-                        <tr>
-                            <td class="collapsing">
+                <div class="ui blue celled striped table raised segment">
+                    <div class="ui padded grid" ng-repeat="item in cv.techskills">
+                        <div class="row grid-row">
+                            <div class="three wide column">
                                 <i class="{{item.icon}} icon"></i>
                                 <strong>{{item.title}}</strong>
-                            </td>
-                            <td>{{item.text}}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                            <div class="twelve wide column">{{item.text}}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_empl">
                 <div class="ui blue raised segment" ng-repeat="item in cv.employment | filter:show != false">
@@ -107,14 +108,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                
-                                <div style="font-weight: bold">{{cv.education.univ.title}}</div>
-                                <div class="text">{{cv.education.univ.description}}</div>
+                        <tr ng-repeat="item in cv.education.univ | orderBy:'period':true">
+                            <td>                       
+                                <div style="font-weight: bold">{{item.title}}</div>
+                                <div class="text">{{item.description}}</div>
                             </td>
                             <td class="right aligned collapsing">
-                                {{cv.education.univ.period}}
+                                {{item.period}}
                             </td>
                         </tr>
                     </tbody>
@@ -160,7 +160,9 @@
                     </tbody>
                 </table>
             </div>
-            
+            <div class="ui blue message">
+                <p>Powered by <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></p>
+            </div>
         </div>
   
     </body>

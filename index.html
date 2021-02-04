@@ -45,8 +45,12 @@
                     <i class="industry icon"></i>
                     Employment</a>
                 <a class="item" data-tab="tab_edu">
-                    <i class="student icon"></i>
+                    <i class="graduation cap icon"></i>
                     Education
+                </a>
+                <a class="item" data-tab="tab_hbs">
+                    <i class="users icon"></i>
+                    Hobbies
                 </a>
             </div>
             <div class="ui bottom attached tab segment active" data-tab="tab_sum">
@@ -111,7 +115,10 @@
                         <tr ng-repeat="item in cv.education.univ | orderBy:'period':true">
                             <td>                       
                                 <div style="font-weight: bold">{{item.title}}</div>
-                                <div class="text">{{item.description}}</div>
+                                <div class="text">
+                                    <a href="{{item.url}}" target="_blank">{{item.description}}</a>
+                                    <i class="{{item.country}} flag"></i>
+                                </div>
                             </td>
                             <td class="right aligned collapsing">
                                 {{item.period}}
@@ -123,7 +130,12 @@
                     <thead>
                         <tr>
                             <th colspan="2">
-                                <div class="ui blue ribbon label"><h4>Courses</h4></div>
+                                <div class="ui blue ribbon label">
+                                    <h4>
+                                        <i class="graduation cap icon"></i>
+                                        Courses
+                                    </h4>
+                                </div>
                             </th>
                         </tr>
                     </thead>
@@ -131,7 +143,9 @@
                         <tr ng-repeat="item in cv.education.courses | orderBy:'period':true">
                             <td>
                                 <div style="font-weight: bold">{{item.title}}</div>
-                                <div class="text">{{item.description}}</div>
+                                <div class="text">
+                                    <a href="{{item.url}}" target="_blank">{{item.description}}</a>
+                                </div>
                             </td>
                             <td class="right aligned collapsing">
                                 {{item.period}}
@@ -143,14 +157,21 @@
                     <thead>
                         <tr>
                             <th colspan="2">
-                                <div class="ui blue ribbon label"><h4>Certificates</h4></div>
+                                <div class="ui blue ribbon label">
+                                    <h4>
+                                        <i class="certificate icon"></i>
+                                        Certificates
+                                    </h4>
+                                </div>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr ng-repeat="item in cv.education.cert | orderBy:'period':true">
                             <td>
-                                <div style="font-weight: bold">{{item.title}}</div>
+                                <div style="font-weight: bold">
+                                    <a href="{{item.url}}">{{item.title}}</a>
+                                </div>
                                 <div class="text">{{item.description}}</div>
                             </td>
                             <td class="right aligned collapsing">
@@ -160,8 +181,54 @@
                     </tbody>
                 </table>
             </div>
+            <div class="ui bottom attached tab segment" data-tab="tab_hbs">
+                <div class="ui list">
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Tennis
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Table Tennis
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            WingChun
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Skating
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Chess
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Reading
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="angle right icon"></i>
+                        <div class="content">
+                            Spanish
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="ui blue message">
-                <p>Powered by <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a></p>
+                <p>Powered by <a href="https://semantic-ui.com/" target="_blank" style="color: navy">Semantic UI</a></p>
             </div>
         </div>
   

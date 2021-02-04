@@ -20,7 +20,7 @@ cvApp.controller("cvController", function ($scope) {
             { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Bootstrap, Telerik KendoUI." },
             { title: "Source control", icon: "git", text: "TFS, Git, GitHub." },
             { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine" },
-            { title: "Database", icon: "database", text: "MS SQL Server, SQLite, MongoDB." },
+            { title: "Databases", icon: "database", text: "MS SQL Server, SQLite, MongoDB." },
             { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions."},
             { title: "Technology", icon: "cloud upload", text: "AWS, Azure." }
         ],
@@ -92,20 +92,26 @@ cvApp.controller("cvController", function ($scope) {
         ],
         education: {
             univ: [
-                { title: "M. Eng. in Electrical Engineering", period: "1982 - 1987", description: "Perm State Technical University, Perm, Russia" },
-                { title: "Software Engineering", period: "1997", description: "Tel-Aviv University, Israel" }
+                { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
+                { title: "Software Engineering", country: "Israel", period: "1997", description: "Tel-Aviv University", url: "https://english.tau.ac.il/" }
             ],
             courses: [
-                { title: "MongoDB 101", period: "2018", description: "Mongo DB University"},
-                { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ" },
-                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto"}               
+                { title: "MongoDB for .NET", period: "2018", description: "MongoDB University", url: "https://university.mongodb.com/" },
+                { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ", url: "https://www.solidq.com/us/" },
+                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto", url: "https://www.learningtree.ca/" }
             ],
             cert: [
-                { title: "MCSD", period: "12/2020", description: "Application Development" },
-                { title: "MCSA", period: "03/2020", description: "Web Development" },
-                { title: "MCTS", period: "03/2011", description: "Windows Mobile 6.5, Application Development" }
+                { title: "MCSD", period: "12/2020", description: "Microsoft Certified Solutions Developer: App Builder", url: "#" },
+                { title: "MCSA", period: "03/2020", description: "Microsoft Certified Solutions Associate: Web Applications", url: "#" },
+                { title: "MCTS", period: "03/2011", description: "Windows Mobile 6.5, Application Development", url: "#" }
             ]
-        }
+        },
+        hobbies: [
+            { description: "Tennis" },
+            { description: "Piano" },
+            { description: "Ping-pong" },
+            { description: "Chess" }
+        ]
     };
 
 });

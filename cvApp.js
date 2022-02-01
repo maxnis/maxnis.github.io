@@ -101,6 +101,7 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto", url: "https://www.learningtree.ca/" }
             ],
             cert: [
+                { title: "MCAD", period: "01/27/2022", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
                 { title: "MCSD", period: "12/2020", description: "Microsoft Certified Solutions Developer: App Builder", url: "#" },
                 { title: "MCSA", period: "03/2020", description: "Microsoft Certified Solutions Associate: Web Applications", url: "#" },
                 { title: "MCTS", period: "03/2011", description: "Windows Mobile 6.5, Application Development", url: "#" }

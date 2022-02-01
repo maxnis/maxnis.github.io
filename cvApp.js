@@ -102,16 +102,16 @@ cvApp.controller("cvController", function ($scope) {
             ],
             cert: [
                 { title: "MCAD", period: "2022/01/27", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
-                { title: "MCSD", period: "2020/12", description: "Microsoft Certified Solutions Developer: App Builder", url: "#" },
-                { title: "MCSA", period: "2020/03", description: "Microsoft Certified Solutions Associate: Web Applications", url: "#" },
-                { title: "MCTS", period: "2011/03", description: "Windows Mobile 6.5, Application Development", url: "#" }
+                { title: "MCSD", period: "2020/12", description: "Microsoft Certified Solutions Developer: App Builder", url: "https://www.credly.com/badges/18f083ce-7369-4ee1-a282-028cdb241b7b" },
+                { title: "MCSA", period: "2020/03", description: "Microsoft Certified Solutions Associate: Web Applications", url: "https://www.credly.com/badges/98f6433c-660a-4fa2-83cf-f16c36d44d49" }
             ]
         },
         hobbies: [
             { description: "Tennis" },
             { description: "Piano" },
             { description: "Ping-pong" },
-            { description: "Chess" }
+            { description: "Chess" },
+            { description: "Spanish"}
         ]
     };
 

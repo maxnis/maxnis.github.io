@@ -16,7 +16,7 @@ cvApp.controller("cvController", function ($scope) {
         techskills: [
             { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, T-SQL, TypeScript, JavaScript, PowerShell, Groovy." },
             { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, JMeter, Postman." },
-            { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF, NServiceBus."},
+            { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF, Apache Airflow."},
             { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },
             { title: "Source control", icon: "git", text: "Git, GitHub, Gitlab." },
             { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine, Jest, JMeter." },

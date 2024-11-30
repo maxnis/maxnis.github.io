@@ -14,24 +14,39 @@ cvApp.controller("cvController", function ($scope) {
             short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Unit tests / Windows Server / SQL Server / IIS"
         },
         techskills: [
-            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript, Rust." },
-            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, JMeter, Postman." },
-            { title: "Frameworks", icon: "code", text: ".NET 2.0 - 4.8, WCF, Nancy Fx, EF, NServiceBus."},
-            { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, jQuery, jQueryMobile, Knockout JS, Angular, Bootstrap, Telerik KendoUI." },
-            { title: "Source control", icon: "git", text: "TFS, Git, GitHub." },
-            { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine" },
-            { title: "Databases", icon: "database", text: "MS SQL Server, SQLite, MongoDB." },
-            { title: "DevOps", icon: "server", text: "Jenkins, Sonar Qube, Azure DevOps, GitHub Actions."},
-            { title: "Technology", icon: "cloud upload", text: "AWS, Azure." }
+            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript, Python, Groovy." },
+            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, JMeter, Postman." },
+            { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF, NServiceBus."},
+            { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },
+            { title: "Source control", icon: "git", text: "Git, GitHub, Gitlab." },
+            { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine, Jest, JMeter." },
+            { title: "Databases", icon: "database", text: "MS SQL Server, SQLite, MongoDB, MySQL, BigQuery." },
+            { title: "DevOps", icon: "server", text: "Jenkins CI, Sonar Qube, Azure DevOps, GitHub Actions."},
+            { title: "Technology", icon: "cloud upload", text: "AWS, Azure, GCP." }
         ],
         employment: [
+            {
+                company: "Questrade Inc.", address: "North York, ON", country: "Canada", show: true,
+                description: "Canada's largest independent online brokerage",
+                url: "https://www.questrade.com",
+                positions: [
+                    {
+                        title: "Senior Software Developer", period: "04/2022 - present",
+                        dolist: [
+                            "BigQuery - intra and cross team support, DDL and DML, stored procedures and functions.",
+                            "Microservices architecture, GKE, Pubsub, GCS",
+                            "Airflow - complex workflows"
+                        ]
+                    }
+                ]
+            },
             {
                 company: "Upstream Works Ltd.", address: "Vaughan, ON", country: "Canada", show: true,
                 description: "Software solutions for contact centers",
                 url: "https://www.upstreamworks.com",
                 positions: [
                     { 
-                        title: "Senior Software Developer", period: "2016 - present",
+                        title: "Senior Software Developer", period: "2016 - 04/2022",
                         dolist: [
                             "Code development and maintenance.",
                             "Build, tests and deployment automation.",

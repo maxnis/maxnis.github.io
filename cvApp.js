@@ -11,10 +11,10 @@ cvApp.controller("cvController", function ($scope) {
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
             description: "Technically sophisticated and highly accomplished .NET developer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
-            short: "Software Development / Front-End & Back-End Development / Web & Mobile Applications / Windows and Web Services / Unit tests / Windows Server / SQL Server / IIS"
+            short: "Software & Web Development / Front-End & Back-End / Windows & Web Services / Unit tests / Windows Server / SQL Server / IIS"
         },
         techskills: [
-            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, T-SQL, LINQ, JavaScript, PowerShell, TypeScript, Python, Groovy." },
+            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, T-SQL, TypeScript, JavaScript, PowerShell, Groovy." },
             { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, JMeter, Postman." },
             { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF, NServiceBus."},
             { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },

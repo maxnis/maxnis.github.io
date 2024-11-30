@@ -33,8 +33,8 @@ cvApp.controller("cvController", function ($scope) {
                     {
                         title: "Senior Software Developer", period: "04/2022 - present",
                         dolist: [
-                            "BigQuery - intra and cross team support, DDL and DML, stored procedures and functions.",
-                            "Microservices architecture, GKE, Pubsub, GCS",
+                            "BigQuery - DDL, DML, stored procedures, functions.",
+                            "Microservices (TS, Python, .NET Core) - architecture, GKE, Pubsub, GCS",
                             "Airflow - complex workflows"
                         ]
                     }

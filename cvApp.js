@@ -10,18 +10,19 @@ cvApp.controller("cvController", function ($scope) {
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
             description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. 
-            Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
-            short: "Software & Web Development / Front-End & Back-End / Micro-services / Unit testing / Databases"
+            Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. 
+            Passionate about producing reliable and maintainable code.",
+            short: "Software & Web Development / Front-End & Back-End / Microservices / Unit testing / Databases"
         },
         techskills: [
-            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, T-SQL, TypeScript, JavaScript, PowerShell, Groovy." },
+            { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, SQL, TypeScript, JavaScript, PowerShell, Groovy." },
             { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, Postman." },
             { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF."},
-            { title: "Web", icon: "globe", text: "ASP.NET, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },
+            { title: "Web", icon: "globe", text: "ASP.NET, HTML5, CSS, Angular, jQuery, jQueryMobile, KnockoutJS, Bootstrap, Telerik KendoUI." },
             { title: "Source control", icon: "git", text: "Git, GitHub, Gitlab." },
             { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, NUnit, Moq, Jasmine, Jest, JMeter." },
-            { title: "Databases", icon: "database", text: "BigQuery, MS SQL Server, MySQL, MongoDB." },
-            { title: "Automation", icon: "server", text: "Apache Airflow, Jenkins CI, Sonar Qube, Azure DevOps, GitHub Actions."},
+            { title: "Databases", icon: "database", text: "BigQuery, MSSQL Server, MySQL, MongoDB." },
+            { title: "Automation", icon: "server", text: "Apache Airflow, Jenkins CI, SonarQube, Azure DevOps, GitHub Actions."},
             { title: "Technology", icon: "cloud upload", text: "GCP, AWS, Azure." }
         ],
         employment: [
@@ -35,7 +36,7 @@ cvApp.controller("cvController", function ($scope) {
                         dolist: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
                             "Microservices (TS, Python, .NET Core) - architecture, GKE, Pubsub, GCS",
-                            "Airflow - integration, complex workflows"
+                            "Apache Airflow - integration, complex workflows"
                         ]
                     }
                 ]
@@ -46,7 +47,7 @@ cvApp.controller("cvController", function ($scope) {
                 url: "https://www.upstreamworks.com",
                 positions: [
                     { 
-                        title: "Senior Software Developer", period: "2016 - 04/2022",
+                        title: "Senior Software Engineer", period: "2016 - 04/2022",
                         dolist: [
                             "Code - new development and maintenance.",
                             "Build, tests and deployment automation.",
@@ -56,8 +57,8 @@ cvApp.controller("cvController", function ($scope) {
                 ]
             },
             { 
-                company: "Jonas Software", address: "Markham, ON", country: "Canada", show: true,
-                description: "Jonas Software is a leading provider of enterprise software for Club Management and Construction and Service industries", 
+                company: "Jonas Construction Software", address: "Markham, ON", country: "Canada", show: true,
+                description: "Jonas Construction Software is a leading provider of enterprise software for Construction and Service industries", 
                 url: "http://www.jonasconstruction.com", 
                 positions:
                 [
@@ -107,8 +108,8 @@ cvApp.controller("cvController", function ($scope) {
         ],
         education: {
             univ: [
-                { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
                 { title: "Software Engineering", country: "Israel", period: "1997", description: "Tel-Aviv University", url: "https://english.tau.ac.il/" }
+                { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
             ],
             courses: [
                 { title: "MongoDB for .NET", period: "2018", description: "MongoDB University", url: "https://university.mongodb.com/" },

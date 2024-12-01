@@ -6,23 +6,23 @@ cvApp.controller("cvController", function ($scope) {
         city: "Richmond Hill",
         province: "ON",
         country: "ca",
-        phone: "+1-416-856-9515",
         email: "maxnis@gmail.com",
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
-            description: "Technically sophisticated and highly accomplished .NET developer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
-            short: "Software & Web Development / Front-End & Back-End / Windows & Web Services / Unit tests / Windows Server / SQL Server / IIS"
+            description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. 
+            Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
+            short: "Software & Web Development / Front-End & Back-End / Micro-services / Unit testing / Databases"
         },
         techskills: [
             { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, T-SQL, TypeScript, JavaScript, PowerShell, Groovy." },
-            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, JMeter, Postman." },
-            { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF, Apache Airflow."},
-            { title: "Web", icon: "globe", text: "ASP.NET, ASP.NET.MVC, Web API, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },
+            { title: "Dev Tools", icon: "wrench", text: "MS Visual Studio, VS-Code, JetBrains Rider, PyCharm, Postman." },
+            { title: "Frameworks", icon: "code", text: ".NET Core, .NET, WCF, Nancy Fx, EF."},
+            { title: "Web", icon: "globe", text: "ASP.NET, HTML5, CSS, Angular, jQuery, jQueryMobile, Knockout JS, Bootstrap, Telerik KendoUI." },
             { title: "Source control", icon: "git", text: "Git, GitHub, Gitlab." },
-            { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, Moq, Jasmine, Jest, JMeter." },
-            { title: "Databases", icon: "database", text: "MS SQL Server, SQLite, MongoDB, MySQL, BigQuery." },
-            { title: "DevOps", icon: "server", text: "Jenkins CI, Sonar Qube, Azure DevOps, GitHub Actions."},
-            { title: "Technology", icon: "cloud upload", text: "AWS, Azure, GCP." }
+            { title: "Tests", icon: "chart bar", text: "MS Test, xUnit, NUnit, Moq, Jasmine, Jest, JMeter." },
+            { title: "Databases", icon: "database", text: "BigQuery, MS SQL Server, MySQL, MongoDB." },
+            { title: "Automation", icon: "server", text: "Apache Airflow, Jenkins CI, Sonar Qube, Azure DevOps, GitHub Actions."},
+            { title: "Technology", icon: "cloud upload", text: "GCP, AWS, Azure." }
         ],
         employment: [
             {
@@ -31,11 +31,11 @@ cvApp.controller("cvController", function ($scope) {
                 url: "https://www.questrade.com",
                 positions: [
                     {
-                        title: "Senior Software Developer", period: "04/2022 - present",
+                        title: "Senior Software Engineer", period: "04/2022 - present",
                         dolist: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
                             "Microservices (TS, Python, .NET Core) - architecture, GKE, Pubsub, GCS",
-                            "Airflow - complex workflows"
+                            "Airflow - integration, complex workflows"
                         ]
                     }
                 ]
@@ -48,9 +48,9 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Senior Software Developer", period: "2016 - 04/2022",
                         dolist: [
-                            "Code development and maintenance.",
+                            "Code - new development and maintenance.",
                             "Build, tests and deployment automation.",
-                            "Load tests maintenance, execution and analysis."
+                            "Load tests - maintenance, execution and analysis."
                         ]
                     }
                 ]
@@ -123,10 +123,9 @@ cvApp.controller("cvController", function ($scope) {
         },
         hobbies: [
             { description: "Tennis" },
-            { description: "Piano" },
             { description: "Ping-pong" },
             { description: "Chess" },
-            { description: "Spanish"}
+            { description: "WingChun"}
         ]
     };
 

@@ -9,9 +9,7 @@ cvApp.controller("cvController", function ($scope) {
         email: "maxnis@gmail.com",
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
-            description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. 
-            Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. 
-            Passionate about producing reliable and maintainable code.",
+            description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
             short: "Software & Web Development / Front-End & Back-End / Microservices / Unit testing / Databases"
         },
         techskills: [

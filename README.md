@@ -2,16 +2,25 @@
 
 ### My Languages
 
-| Rank | Languages |
-|-----:|-----------|
-|     1| C#        |
-|     2| TypeScript|
-|     3| JavaScript|
-|     4| SQL       |
-|     5| Python    |
-|     6| PowerShell|
-|     7| C/C++     |
-|     8| Groovy    |
+* C#
+* TypeScript
+  * NestJs
+  * Angular
+* JavaScript
+  * jQuery
+  * jQueryMobile
+  * KnockoutJS
+  * Telerik Kendo UI
+* SQL
+  * Standard
+  * T-SQL
+  * MySQL
+  * PostgreSQL
+  * BigQuery
+* Python
+* PowerShell
+* C/C++
+* Groovy
 
 ### My Databases
 * MS SQL Server

@@ -33,8 +33,9 @@ cvApp.controller("cvController", function ($scope) {
                         title: "Senior Software Engineer", period: "04/2022 - present",
                         dolist: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
-                            "Microservices (TS, Python, .NET Core) - architecture, GKE, Pubsub, GCS",
-                            "Apache Airflow - integration, complex workflows"
+                            "ETL - Python, CloudSQL (MySQL), BigQuery, GCS.",
+                            "Microservices - (Node.js/TypeScript, Python, .NET Core) - architecture, GKE, Pubsub, GCS, QuickFIX, WebSphere MQ.",
+                            "Apache Airflow - integration, complex workflows."
                         ]
                     }
                 ]
@@ -47,8 +48,8 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Senior Software Engineer", period: "2016 - 04/2022",
                         dolist: [
-                            "Code - new development and maintenance.",
-                            "Build, tests and deployment automation.",
+                            "Web sites, Windows services, IIS, MS SQL.",
+                            "Build server (Jenkins CI), AWS S3, tests and deployment automation.",
                             "Load tests - maintenance, execution and analysis."
                         ]
                     }
@@ -63,12 +64,9 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Senior Software Developer", period: "2008 - 2016", 
                         dolist: [
-                        "Led hybrid mobile HTML5 project using AngularJS and Kendo UI for the front-end and NancyFx to implement RESTful api as a back-end.", 
-                        "Managed successful migration of web-hosted solutions to a new environment, ensuring that no data loss occurred in the process. Project involved both system and SQL Server version upgrade and required transferring of hundreds of websites and databases. Created automation tools to simplify the process of new releases and updates. Developed, automated and documented procedure of creating infrastructure for new customers including web sites and databases.",
-                        "Headed development of multi-tier software containing cross-platform HTML5 mobile responsive web application having implemented offline functionality using websqldb and application cache.",
-                        "Designed multi-tenant architecture for data-driven hosted web products, which reduced maintenance costs.",
-                        "Initiated and completed an internal web based admin dashboard tool used by professional services and technical support. The tool provided features to register and configure customers in the hosting environment, test their working modules remotely replacing previous manual procedures thus reducing support time and simplifying problem identification.",
-                        "Collaborated with teams to improve performance of various systems including websites, web services, windows services, and desktop applications."
+                            "Web services, Web sites, Windows services, SQL Server",
+                            "Hosting management, IIS, Provisioning.",
+                            "JavaScript - jQuery, jQueryMobile, KnockoutJS, AngularJS, Telerik Kendo UI."
                     ]}
                 ] 
             },
@@ -81,9 +79,9 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Software Developer", period: "2006 - 2008", 
                         dolist: [
-                            "Maintained in-house device diagnostics and provisioning software tools.",
-                            "Developed modules and features for the customer's web portal solution.",
-                            "Accomplished various SQL Server development projects as well as development and maintenance of different modules for real-time fleet management web portal."
+                            "In-house device diagnostics and provisioning tools.",
+                            "Web portal solution, Windows services.",
+                            "MS SQL Server."
                     ]}
                 ]
             },
@@ -96,9 +94,9 @@ cvApp.controller("cvController", function ($scope) {
                     {
                         title: "Software Engineer", period: "1997 - 2005",
                         dolist: [
-                            "Developed numerous data processing projects like merging, sorting, translation and more according to requirements which saved mailing costs and often helped the company to win a tender.",
-                            "Built modules for creating Postscript files of variable data for digital printer using Printsoft. Wrote printer side scripts to combine master graphics and data files which minimized significantly RIP time and size of created files.",
-                            "Designed and implemented indexing system which replaced existing sorting routine of large data files and saved processing time on x386 computers from hours to minutes allowing to complete and submit projects in time."
+                            "Merging, sorting, translation and more, C, C++.",
+                            "Printsoft, Postscript, RIP.",
+                            "Indexing system, various APIs, C, C++."
                         ]
                     }
                 ]
@@ -110,7 +108,8 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
             ],
             courses: [
-                { title: "MongoDB for .NET", period: "2018", description: "MongoDB University", url: "https://university.mongodb.com/" },
+                { title: "Azure Functions and Logic Apps", period: "2020", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "MongoDB for .NET", period: "2017", description: "MongoDB University", url: "https://university.mongodb.com/" },
                 { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ", url: "https://www.solidq.com/us/" },
                 { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto", url: "https://www.learningtree.ca/" }
             ],

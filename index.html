@@ -40,8 +40,16 @@
                 <a class="item" data-tab="tab_empl">
                     <i class="industry icon"></i>
                     Employment</a>
-                <a class="item" data-tab="tab_edu">
+                <a class="item" data-tab="tab_crs">
                     <i class="graduation cap icon"></i>
+                    Courses
+                </a>
+                <a class="item" data-tab="tab_cert">
+                    <i class="certificate icon"></i>
+                    Certifiates
+                </a>
+                <a class="item" data-tab="tab_edu">
+                    <i class="university icon"></i>
                     Education
                 </a>
                 <a class="item" data-tab="tab_hbs">
@@ -54,7 +62,8 @@
                     <div class="content">
                         <p class="text">{{cv.summary.description}}</p>
                         <p class="ui message" style="text-align: center; font-style: italic">
-                            {{cv.summary.short}}</p>
+                            {{cv.summary.short}}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -80,7 +89,8 @@
                         <div>
                             {{job.address}} <i class="{{job.country}} flag"></i> - <a ng-href="{{job.url}}" target="_blank">{{job.url}}</a>
                         </div>
-                        <div class="text" style="font-style: italic; margin-bottom: 10px">({{job.description}})
+                        <div class="text" style="font-style: italic; margin-bottom: 10px">
+                            ({{job.description}})
                         </div>
                         <div class="ui item" ng-repeat="position in job.positions">
                             <strong>{{pos.title}}</strong> ({{pos.period}})
@@ -92,6 +102,64 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="tab_crs">
+                <table class="ui blue celled striped table raised segment">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="ui blue ribbon label">
+                                    <h4>
+                                        <i class="graduation cap icon"></i>
+                                        Courses
+                                    </h4>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in cv.education.courses | orderBy:'period':true">
+                            <td>
+                                <div style="font-weight: bold">{{item.title}}</div>
+                                <div class="text">
+                                    <a href="{{item.url}}" target="_blank">{{item.description}}</a>
+                                </div>
+                            </td>
+                            <td class="right aligned collapsing">
+                                {{item.period}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="tab_cert">
+                <table class="ui blue celled striped table raised segment">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="ui blue ribbon label">
+                                    <h4>
+                                        <i class="certificate icon"></i>
+                                        Certificates
+                                    </h4>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in cv.education.cert | orderBy:'period':true">
+                            <td>
+                                <div style="font-weight: bold">
+                                    <a href="{{item.url}}" target="_blank">{{item.title}}</a>
+                                </div>
+                                <div class="text">{{item.description}}</div>
+                            </td>
+                            <td class="right aligned collapsing">
+                                {{item.period}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_edu">
                 <table class="ui blue celled striped table raised segment">
@@ -122,60 +190,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="ui blue celled striped table raised segment">
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <div class="ui blue ribbon label">
-                                    <h4>
-                                        <i class="graduation cap icon"></i>
-                                        Courses
-                                    </h4>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="item in cv.education.courses | orderBy:'period':true">
-                            <td>
-                                <div style="font-weight: bold">{{item.title}}</div>
-                                <div class="text">
-                                    <a href="{{item.url}}" target="_blank">{{item.description}}</a>
-                                </div>
-                            </td>
-                            <td class="right aligned collapsing">
-                                {{item.period}}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="ui blue celled striped table raised segment">
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <div class="ui blue ribbon label">
-                                    <h4>
-                                        <i class="certificate icon"></i>
-                                        Certificates
-                                    </h4>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="item in cv.education.cert | orderBy:'period':true">
-                            <td>
-                                <div style="font-weight: bold">
-                                    <a href="{{item.url}}" target="_blank">{{item.title}}</a>
-                                </div>
-                                <div class="text">{{item.description}}</div>
-                            </td>
-                            <td class="right aligned collapsing">
-                                {{item.period}}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_hbs">
                 <div class="ui list">
@@ -191,7 +205,7 @@
                 <p>Powered by <a href="https://semantic-ui.com/" target="_blank" style="color: navy">Semantic UI</a></p>
             </div>
         </div>
-  
+
     </body>
     <script>
         $('.tabular.menu .item').tab();

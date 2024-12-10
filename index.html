@@ -93,7 +93,7 @@
                             ({{job.description}})
                         </div>
                         <div class="ui item" ng-repeat="position in job.positions">
-                            <strong>{{pos.title}}</strong> ({{pos.period}})
+                            <strong>{{position.title}}</strong> ({{position.period}})
                             <ul>
                                 <li ng-repeat="workitem in position.work">
                                     {{workitem}}
@@ -118,9 +118,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="item in cv.education.courses | orderBy:'period':true">
+                        <tr ng-repeat="item in cv.education.courses | orderBy:'-period'">
                             <td>
                                 <div style="font-weight: bold">{{item.title}}</div>
+                            </td>
+                            <td>
                                 <div class="text">
                                     <a href="{{item.url}}" target="_blank">{{item.description}}</a>
                                 </div>
@@ -147,12 +149,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="item in cv.education.cert | orderBy:'period':true">
+                        <tr ng-repeat="item in cv.education.cert | orderBy:'-period'">
+                            <td>
+                                <div class="text">{{item.title}}</div>
+                            </td>
                             <td>
                                 <div style="font-weight: bold">
-                                    <a href="{{item.url}}" target="_blank">{{item.title}}</a>
+                                    <a href="{{item.url}}" target="_blank">{{item.description}}</a>
                                 </div>
-                                <div class="text">{{item.description}}</div>
                             </td>
                             <td class="right aligned collapsing">
                                 {{item.period}}
@@ -179,6 +183,8 @@
                         <tr ng-repeat="item in cv.education.univ | orderBy:'period':true">
                             <td>                       
                                 <div style="font-weight: bold">{{item.title}}</div>
+                            </td>
+                            <td>
                                 <div class="text">
                                     <a href="{{item.url}}" target="_blank">{{item.description}}</a>
                                     <i class="{{item.country}} flag"></i>

@@ -126,9 +126,9 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "MongoDB for .NET", period: "12/2017", description: "MongoDB University", url: "https://university.mongodb.com/" },
             ],
             cert: [
-                { title: "MCAD", period: "2022/01/27", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
-                { title: "MCSD", period: "2020/12", description: "Microsoft Certified Solutions Developer: App Builder", url: "https://www.credly.com/badges/18f083ce-7369-4ee1-a282-028cdb241b7b" },
-                { title: "MCSA", period: "2020/03", description: "Microsoft Certified Solutions Associate: Web Applications", url: "https://www.credly.com/badges/98f6433c-660a-4fa2-83cf-f16c36d44d49" }
+                { title: "MCAD", period: "01/2022", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
+                { title: "MCSD", period: "12/2020", description: "Microsoft Certified Solutions Developer: App Builder", url: "https://www.credly.com/badges/18f083ce-7369-4ee1-a282-028cdb241b7b" },
+                { title: "MCSA", period: "03/2020", description: "Microsoft Certified Solutions Associate: Web Applications", url: "https://www.credly.com/badges/98f6433c-660a-4fa2-83cf-f16c36d44d49" }
             ]
         },
         hobbies: [

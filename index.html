@@ -72,21 +72,21 @@
                 </div>
             </div>
             <div class="ui bottom attached tab segment" data-tab="tab_empl">
-                <div class="ui blue raised segment" ng-repeat="item in cv.employment | filter:show != false">
+                <div class="ui blue raised segment" ng-repeat="job in cv.employment | filter:show != false">
                     <div class="ui blue ribbon label">
-                        <h4>{{item.company}}</h4>
+                        <h4>{{job.company}}</h4>
                     </div>
                     <div class="content">
                         <div>
-                            {{item.address}} <i class="{{item.country}} flag"></i> - <a ng-href="{{item.url}}" target="_blank">{{item.url}}</a>
+                            {{job.address}} <i class="{{job.country}} flag"></i> - <a ng-href="{{job.url}}" target="_blank">{{job.url}}</a>
                         </div>
-                        <div class="text" style="font-style: italic; margin-bottom: 10px">({{item.description}})
+                        <div class="text" style="font-style: italic; margin-bottom: 10px">({{job.description}})
                         </div>
-                        <div class="ui item" ng-repeat="pos in item.positions">
+                        <div class="ui item" ng-repeat="position in job.positions">
                             <strong>{{pos.title}}</strong> ({{pos.period}})
                             <ul>
-                                <li ng-repeat="job in pos.dolist">
-                                    {{job}}
+                                <li ng-repeat="workitem in position.work">
+                                    {{workitem}}
                                 </li>
                             </ul>
                         </div>

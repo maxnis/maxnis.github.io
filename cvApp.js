@@ -10,7 +10,7 @@ cvApp.controller("cvController", function ($scope) {
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
             description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
-            short: "Software & Web Development / Front-End & Back-End / Microservices / Unit testing / Databases"
+            short: "Software & Web Development / Front-End / Back-End / Microservices / Unit testing / Databases"
         },
         techskills: [
             { title: "Languages", icon: "file code", text: "C, C++, C#, VB.NET, Python, SQL, TypeScript, JavaScript, PowerShell, Groovy." },
@@ -31,7 +31,7 @@ cvApp.controller("cvController", function ($scope) {
                 positions: [
                     {
                         title: "Senior Software Engineer", period: "04/2022 - present",
-                        dolist: [
+                        work: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
                             "ETL - Python, CloudSQL (MySQL), BigQuery, GCS.",
                             "Microservices - (Node.js/TypeScript, Python, .NET Core) - architecture, GKE, Pubsub, GCS, QuickFIX, WebSphere MQ.",
@@ -47,7 +47,7 @@ cvApp.controller("cvController", function ($scope) {
                 positions: [
                     { 
                         title: "Senior Software Engineer", period: "2016 - 04/2022",
-                        dolist: [
+                        work: [
                             "Web sites, Windows services, IIS, MS SQL.",
                             "Build server (Jenkins CI), AWS S3, tests and deployment automation.",
                             "Load tests - maintenance, execution and analysis."
@@ -63,26 +63,28 @@ cvApp.controller("cvController", function ($scope) {
                 [
                     { 
                         title: "Senior Software Developer", period: "2008 - 2016", 
-                        dolist: [
+                        work: [
                             "Web services, Web sites, Windows services, SQL Server",
-                            "Hosting management, IIS, Provisioning.",
+                            "Hosting management, IIS, Deployment, Provisioning.",
                             "JavaScript - jQuery, jQueryMobile, KnockoutJS, AngularJS, Telerik Kendo UI."
-                    ]}
+                        ]
+                    }
                 ] 
             },
             {
                 company: "BSM Wireless", address: "Woodbridge, ON", country: "Canada", show: true,
-                description: "BSM Wireless Inc. designs, manufactures and markets a comprehensive line of Automatic Vehicle Security and Location solutions", 
-                url: "http://www.bsmwireless.com", 
-                positions: 
+                description: "BSM Wireless Inc. designs, manufactures and markets a comprehensive line of Automatic Vehicle Security and Location solutions",
+                url: "http://www.bsmwireless.com",
+                positions:
                 [
                     { 
                         title: "Software Developer", period: "2006 - 2008", 
-                        dolist: [
+                        work: [
                             "In-house device diagnostics and provisioning tools.",
                             "Web portal solution, Windows services.",
                             "MS SQL Server."
-                    ]}
+                        ]
+                    }
                 ]
             },
             {
@@ -93,10 +95,10 @@ cvApp.controller("cvController", function ($scope) {
                 [
                     {
                         title: "Software Engineer", period: "1997 - 2005",
-                        dolist: [
-                            "Merging, sorting, translation and more, C, C++.",
-                            "Printsoft, Postscript, RIP.",
-                            "Indexing system, various APIs, C, C++."
+                        work: [
+                            "Merging, sorting, conversion and more, C, C++.",
+                            "Printsoft, Postscript.",
+                            "Indexing system, APIs, C, C++."
                         ]
                     }
                 ]
@@ -108,10 +110,20 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
             ],
             courses: [
-                { title: "Azure Functions and Logic Apps", period: "2020", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "MongoDB for .NET", period: "2017", description: "MongoDB University", url: "https://university.mongodb.com/" },
-                { title: "Advanced T-SQL for SQL Server 08/12", period: "2014", description: "SolidQ", url: "https://www.solidq.com/us/" },
-                { title: "Intro to ASP.NET MVC", period: "2011", description: "Learning Tree, Toronto", url: "https://www.learningtree.ca/" }
+                { title: "Introduction to Statistics", period: "12/2024", description: "Stanford University/Coursera", url: "https://www.coursera.org/"},
+                { title: "Apache Beam", period: "02/2024", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Financial Markets", period: "10/2023", description: "Yale University/Coursera", url: "https://www.coursera.org/"},
+                { title: "Applied SQL for Analytics BigQuery", period: "03/2023", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "ETL Using Python", period: "03/2023", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "AWS Concepts", period: "05/2022", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Rust", period: "11/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "TypeScript", period: "09/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "AWS Solutions Architect Associate", period: "06/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Azure Fundamentals", period: "04/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Github Actions & Workflows", period: "04/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Unit testing with Jasmine", period: "01/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Azure Functions and Logic Apps", period: "2020", description: "Udemy", url: "https://www.udemy.com/" },
+                { title: "MongoDB for .NET", period: "12/2017", description: "MongoDB University", url: "https://university.mongodb.com/" },
             ],
             cert: [
                 { title: "MCAD", period: "2022/01/27", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},

@@ -7,6 +7,7 @@ cvApp.controller("cvController", function ($scope) {
         province: "ON",
         country: "ca",
         email: "maxnis@gmail.com",
+        title: "Software Engineer",
         summary: {
             title: "Software engineer with more than 10 years of experience in systems development.",
             description: "Technically sophisticated and highly accomplished software engineer with a successful track record in systems analysis, design, and business process modelling. Skilled at providing specialized workflow solutions and technical support. Extensive experience of extending enterprise applications to support product profitability and customer retention. Passionate about producing reliable and maintainable code.",
@@ -33,8 +34,7 @@ cvApp.controller("cvController", function ($scope) {
                         title: "Senior Software Engineer", period: "2022/04 - present",
                         work: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
-                            "ETL - Python, CloudSQL (MySQL), BigQuery, GCS.",
-                            "Microservices - (Node.js/TypeScript, Python, .NET Core) - architecture, GKE, Pubsub, GCS, QuickFIX, WebSphere MQ.",
+                            "Microservices (Node.js/TypeScript, Python, .NET Core) - architecture, GKE, Pubsub, CloudSQL (MySQL), BigQuery, GCS, QuickFIX, WebSphere MQ.",
                             "Apache Airflow - integration, complex workflows."
                         ]
                     }
@@ -122,7 +122,7 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "Azure Fundamentals", period: "2021/04", description: "Udemy", url: "https://www.udemy.com/"},
                 { title: "Github Actions & Workflows", period: "2021/04", description: "Udemy", url: "https://www.udemy.com/"},
                 { title: "Unit testing with Jasmine", period: "2021/01", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Azure Functions and Logic Apps", period: "2020", description: "Udemy", url: "https://www.udemy.com/" },
+                { title: "Azure Functions and Logic Apps", period: "2020/12", description: "Udemy", url: "https://www.udemy.com/" },
                 { title: "MongoDB for .NET", period: "2017/12", description: "MongoDB University", url: "https://university.mongodb.com/" },
             ],
             cert: [

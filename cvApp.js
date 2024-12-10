@@ -30,7 +30,7 @@ cvApp.controller("cvController", function ($scope) {
                 url: "https://www.questrade.com",
                 positions: [
                     {
-                        title: "Senior Software Engineer", period: "04/2022 - present",
+                        title: "Senior Software Engineer", period: "2022/04 - present",
                         work: [
                             "BigQuery - DDL, DML, stored procedures, functions.",
                             "ETL - Python, CloudSQL (MySQL), BigQuery, GCS.",
@@ -46,7 +46,7 @@ cvApp.controller("cvController", function ($scope) {
                 url: "https://www.upstreamworks.com",
                 positions: [
                     { 
-                        title: "Senior Software Engineer", period: "2016 - 04/2022",
+                        title: "Senior Software Engineer", period: "2016 - 2022/04",
                         work: [
                             "Web sites, Windows services, IIS, MS SQL.",
                             "Build server (Jenkins CI), AWS S3, tests and deployment automation.",
@@ -110,25 +110,25 @@ cvApp.controller("cvController", function ($scope) {
                 { title: "M. Eng. in Electrical Engineering", country: "Russia", period: "1982 - 1987", description: "Perm State Technical University, Perm", url: "https://pstu.ru/en/" },
             ],
             courses: [
-                { title: "Introduction to Statistics", period: "12/2024", description: "Stanford University/Coursera", url: "https://www.coursera.org/"},
-                { title: "Apache Beam", period: "02/2024", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Financial Markets", period: "10/2023", description: "Yale University/Coursera", url: "https://www.coursera.org/"},
-                { title: "Applied SQL for Analytics BigQuery", period: "03/2023", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "ETL Using Python", period: "03/2023", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "AWS Concepts", period: "05/2022", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Rust", period: "11/2021", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "TypeScript", period: "09/2021", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "AWS Solutions Architect Associate", period: "06/2021", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Azure Fundamentals", period: "04/2021", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Github Actions & Workflows", period: "04/2021", description: "Udemy", url: "https://www.udemy.com/"},
-                { title: "Unit testing with Jasmine", period: "01/2021", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Introduction to Statistics", period: "2024/12", description: "Stanford University/Coursera", url: "https://www.coursera.org/"},
+                { title: "Apache Beam", period: "2024/02", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Financial Markets", period: "2023/10", description: "Yale University/Coursera", url: "https://www.coursera.org/"},
+                { title: "Applied SQL for Analytics BigQuery", period: "2023/03", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "ETL Using Python", period: "2023/03", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "AWS Concepts", period: "2022/05", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Learn Rust", period: "2021/11", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "TypeScript with Applications", period: "2021/09", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "AWS Solutions Architect Associate", period: "2021/06", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Azure Fundamentals", period: "2021/04", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Github Actions & Workflows", period: "2021/04", description: "Udemy", url: "https://www.udemy.com/"},
+                { title: "Unit testing with Jasmine", period: "2021/01", description: "Udemy", url: "https://www.udemy.com/"},
                 { title: "Azure Functions and Logic Apps", period: "2020", description: "Udemy", url: "https://www.udemy.com/" },
-                { title: "MongoDB for .NET", period: "12/2017", description: "MongoDB University", url: "https://university.mongodb.com/" },
+                { title: "MongoDB for .NET", period: "2017/12", description: "MongoDB University", url: "https://university.mongodb.com/" },
             ],
             cert: [
-                { title: "MCAD", period: "01/2022", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
-                { title: "MCSD", period: "12/2020", description: "Microsoft Certified Solutions Developer: App Builder", url: "https://www.credly.com/badges/18f083ce-7369-4ee1-a282-028cdb241b7b" },
-                { title: "MCSA", period: "03/2020", description: "Microsoft Certified Solutions Associate: Web Applications", url: "https://www.credly.com/badges/98f6433c-660a-4fa2-83cf-f16c36d44d49" }
+                { title: "MCAD", period: "2022/01", description: "Microsoft Certified: Azure Developer Associate", url: "https://www.credly.com/badges/a6ed597f-ecbb-4e59-82b8-cdd2878f2d44"},
+                { title: "MCSD", period: "2020/12", description: "Microsoft Certified Solutions Developer: App Builder", url: "https://www.credly.com/badges/18f083ce-7369-4ee1-a282-028cdb241b7b" },
+                { title: "MCSA", period: "2020/03", description: "Microsoft Certified Solutions Associate: Web Applications", url: "https://www.credly.com/badges/98f6433c-660a-4fa2-83cf-f16c36d44d49" }
             ]
         },
         hobbies: [

@@ -1,49 +1,72 @@
-## CV
+### [Resume Url](https://maxnis.github.io/)
 
-### My Languages
+<details>
+ <summary>Languages</summary>
+   <ul>
+    <li>C#</li>
+    <li>C/C++</li>
+    <li>Python</li>
+    <li>TypeScript
+     <ul>
+      <li>NestJs</li>
+      <li>Angular</li>
+     </ul>
+    </li>
+    <li>
+     JavaScript
+      <ul>
+       <li>jQuery</li>
+       <li>jQueryMobile</li>
+       <li>AngularJS</li>
+       <li>KnockoutJS</li>
+       <li>Telerik Kendo UI</li>
+      </ul>
+    </li>
+    <li>SQL</li>
+    <li>PowerShell</li>
+    <li>Groovy</li>
+   </ul>
+</details>
 
-* C#
-* TypeScript
-  * NestJs
-  * Angular
-* JavaScript
-  * jQuery
-  * jQueryMobile
-  * KnockoutJS
-  * Telerik Kendo UI
-* SQL
-  * Standard
-  * T-SQL
-  * MySQL
-  * PostgreSQL
-  * BigQuery
-* Python
-* PowerShell
-* C/C++
-* Groovy
+<details>
+ <summary>Databases</summary>
+  <ul>
+   <li>MSSQL Server</li>
+   <li>MySQL</li>
+   <li>PostgreSQL</li>
+   <li>BigQuery</li>
+   <li>MongoDB</li>
+  </ul>
+</details>
 
-### My Databases
-* MS SQL Server
-* MySQL
-* BigQuery
-* MongoDB
+<details>
+ <summary>Source Control</summary>
+  <ul>
+   <li>Git</li>
+   <li>GitHub</li>
+   <li>GitLab</li>
+ </ul>
+</details>
 
-### Source Control
-* Git
-* GitHub
-* GitLab
+<details>
+ <summary>Automation</summary>
+  <ul>
+   <li>Apache Airflow</li>
+   <li>Jenkins CI</li>
+   <li>SonarQube</li>
+   <li>Azure DevOps</li>
+   <li>GitHub Actions</li>
+  </ul>
+</details>
 
-### Automation
-* Apache Airflow
-* Jenkins CI
-* SonarQube
-* Azure DevOps
-* GitHub Actions
-
-### Cloud
-* GCP
-* AWS
-* Azure
+<details>
+ <summary>Technology</summary>
+  <ul>
+   <li>GCP</li>
+   <li>AWS</li>
+   <li>Azure</li>
+  </ul>
+</details>
 
 ---
-> [Resume Url](https://maxnis.github.io/) - Powered by: [Semantic UI](https://www.semantic-ui.com)
+> Powered by: [AngularJS](https://angularjs.org/) - [Semantic UI](https://www.semantic-ui.com)

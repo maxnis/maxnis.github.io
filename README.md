@@ -1,4 +1,4 @@
-### [Resume Url](https://maxnis.github.io/)
+### <a href="https://maxnis.github.io/" target="_blank">Resume Url</a>
 
 <details>
  <summary>Languages</summary>

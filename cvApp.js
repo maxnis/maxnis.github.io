@@ -48,8 +48,8 @@ cvApp.controller("cvController", function ($scope) {
                     { 
                         title: "Senior Software Engineer", period: "2016 - 2022/04",
                         work: [
-                            "Web sites, Windows services, IIS, MS SQL.",
-                            "Build server (Jenkins CI), AWS S3, tests and deployment automation.",
+                            "Web sites, Web API, Windows services, IIS, MS SQL Server.",
+                            "Build server (Jenkins CI), AWS S3, unit tests, end-to-end tests and deployment automation.",
                             "Load tests - maintenance, execution and analysis."
                         ]
                     }
@@ -62,10 +62,10 @@ cvApp.controller("cvController", function ($scope) {
                 positions:
                 [
                     { 
-                        title: "Senior Software Developer", period: "2008 - 2016", 
+                        title: "Senior Software Developer/Tech Lead", period: "2008 - 2016", 
                         work: [
-                            "Web services, Web sites, Windows services, SQL Server",
-                            "Hosting management, IIS, Deployment, Provisioning.",
+                            "Web services, Web sites, Windows services, MS SQL Server",
+                            "Hosting management, IIS, Deployment, Provisioning automation.",
                             "JavaScript - jQuery, jQueryMobile, KnockoutJS, AngularJS, Telerik Kendo UI."
                         ]
                     }

@@ -56,6 +56,7 @@
    <li>SonarQube</li>
    <li>Azure DevOps</li>
    <li>GitHub Actions</li>
+   <li>JMeter</li>
   </ul>
 </details>
 

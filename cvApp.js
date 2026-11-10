@@ -30,7 +30,7 @@ cvApp.controller("cvController", function ($scope) {
         {
           title: "Frameworks",
           icon: "code",
-          text: ".NET Core, .NET, WCF, Nancy Fx, EF.",
+          text: ".NET Core, .NET, WCF, Nancy Fx, EF, .NET MAUI.",
         },
         {
           title: "Web",
